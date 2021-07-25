@@ -1,0 +1,56 @@
+<head>
+    <title>Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="fabric.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <h4 id="player_1_name"></h4><span id="player_1_score"></span>
+    <br>
+    <h4 id="player_2_name"></h4><span id="player_2_score"></span>
+    <div class="container">
+        <center>
+            <div id="heading" class="my-4">Maths Quiz</div>
+            <h4 id="question_turn"></h4>
+            <br>
+            <h4 id="answer_turn"></h4>
+            <div id="output">
+                <label for="answer">Question :&nbsp;</label>
+                <span>
+                    <label id="question"></label>
+                </span>
+                <br>
+                <label for="answer">Answer&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+                <span>
+                    <input type="number" name="answer" id="answer">
+                </span>
+                <br>
+                <button id="check" type="submit" class="btn btn-primary">Check</button>
+            </div>
+            <div id="numbers" class="my-4 border border-danger rounded-circle">
+                <div id="n1" class="my-2">
+                    <label for="n1" class="px-5">Number 1 :</label>
+                    <br>
+                    <input type="number" name="n1" id="n1" class="px-4 m-1">
+                </div>
+                <div id="n2">
+                    <label for="n2" class="px-5">Number 2 :</label>
+                    <br>
+                    <input type="number" name="n2" id="n2" class="px-4 m-1">
+                </div>
+                <button id="send" class="btn btn-primary px-5 m-2" onclick="send()">Send</button>
+            </div>
+        </center>
+    </div>
+    <script src="quiz_game_page.js"></script>
+</body>
